@@ -2,7 +2,7 @@
 
 function isMajeur(int $age) 
 {
-    // return $age >= 18 ? true : false;
+    return $age >= 18 ? true : false;
     if($age >= 18) {
         return true;
     }
