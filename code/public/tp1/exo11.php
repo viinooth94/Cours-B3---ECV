@@ -6,7 +6,6 @@ function capital($country) {
     switch(ucfirst($country)) {
         case 'France':
             $capital = 'Paris';
-            break;
         case 'Allemagne': 
             $capital = 'Berlin';
             break;
@@ -16,8 +15,6 @@ function capital($country) {
         default:
             $capital = 'Inconnu';
     }
-
-
     return $capital;
 }
 ?> 
