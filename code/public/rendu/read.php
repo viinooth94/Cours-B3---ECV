@@ -34,10 +34,10 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         ?>
                 <tr>
                     <td><?= $voiture['id'] ?></td>
-                    <td><?= $voiture['Modele'] ?></td>
-                    <td><?= $voiture['Marque'] ?></td>
-                    <td><?= $voiture['Annee'] ?></td>
-                    <td><?= $voiture['Puissance'] ?></td>
+                    <td><?= $voiture['modele'] ?></td>
+                    <td><?= $voiture['marque'] ?></td>
+                    <td><?= $voiture['annee'] ?></td>
+                    <td><?= $voiture['puissance'] ?></td>
                     <td><a href="information.php?id=<?= $produit['id'] ?>">Voir</a>  <a href="update.php?id=<?= $produit['id'] ?>">Modifier</a>  <a href="delete.php?id=<?= $produit['id'] ?>">Supprimer</a></td>
                 </tr>
         <?php
@@ -45,7 +45,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         ?>
         </tbody>
     </table>
-    <a href="add.php">Ajouter</a>
+    <a href="create.php">Ajouter</a>
 </body>
 </html>
 
