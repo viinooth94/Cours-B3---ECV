@@ -40,7 +40,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
     $query->bindValue(':id', $id, PDO::PARAM_INT);
     $query->execute();
 
-    $result = $query->fetch();
+    $voiture = $query->fetch();
 }
 ?>
 
@@ -52,32 +52,33 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Modifier une voiture</title>
 </head>
 <body>
-<h1>Modifier les informations d'un vehicules</h1>
-    <form method="post">
+<h1>Modifier les informations de la <?= $voiture['modele'] ?> </h1>
+    <form method="post" id="update_form">
         <p>
             <label for="modele">Modèle</label>
-            <input type="text" name="modele" id="modele" value="<?= $result['modele'] ?>">
+            <input type="text" name="modele" id="modele" value="<?= $voiture['modele'] ?>">
         </p>
         <p>
             <label for="marque">Marque</label>
-            <input type="text" name="marque" id="marque" value="<?= $result['marque'] ?>">
+            <input type="text" name="marque" id="marque" value="<?= $voiture['marque'] ?>">
         </p>
         <p>
             <label for="annee">Année</label>
-            <input type="number" name="annee" id="annee" value="<?= $result['annee'] ?>">
+            <input type="number" name="annee" id="annee" value="<?= $voiture['annee'] ?>">
         </p>
         <p>
             <label for="puissance">Puissance</label>
-            <input type="number" name="puissance" id="puissance" value="<?= $result['puissance'] ?>">
+            <input type="number" name="puissance" id="puissance" value="<?= $voiture['puissance'] ?>">
         </p>
         <p>
             <button>Enregistrer</button>
         </p>
         <p><a href="read.php">Retour</a></p>
-        <input type="hidden" name="id" value="<?= $result['id'] ?>">
+        <input type="hidden" name="id" value="<?= $voiture['id'] ?>">
     </form>
 </body>
 </html>

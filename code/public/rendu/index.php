@@ -25,18 +25,17 @@ if(isset($_POST['username']) && !empty($_POST['username'])) {
     <link rel="stylesheet" href="style.css">
     <title>Connexion</title>
 </head>
-<body>
-    <h1>Connexion</h1>
-    <form method="POST" >
-        <div>
-        <legend>Contact</legend>
-            <label for="username">Username</label>
-            <input type="text" name="username" required="" />
-        </div>
-        <div>
+<body >
+    <h1>Bienvenue sur notre site de vehicules ! </h1>
+    <form method="POST" id="connexion_form">
+        <fieldset>
+        <legend>Connexion</legend>
+            <label for="username">Login</label>
+            <input type="text" name="username" required=""/><br />
+    
             <label for="password">Password</label>
-            <input type="password" name="password" required=""/>
-        </div>
+            <input type="password" name="password" required=""/><br />
+        </fieldset>
         <button type="submit">Connexion</button>
     </form>
     <?php if(isset($error) && !empty($error)) {

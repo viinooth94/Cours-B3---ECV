@@ -22,14 +22,13 @@ if(isset($_POST)){
 }
     
 ?>
-
-<h1> Create </h1>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Ajouter une voiture </title>
 </head>
 <body>
@@ -44,7 +43,7 @@ if(isset($_POST)){
                     }
                 ?>
             <h1>Ajouter une voiture</h1>
-                <form method="post">
+                <form method="post" id="create_form">
                     <label for="modele">Modèle</label>
                     <input type="text" name="modele" id="modele">
                     <label for="marque">Marque</label>

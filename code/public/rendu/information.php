@@ -31,7 +31,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Détail de la voitures</title>
+    <title>Détails de la voiture</title>
 </head>
 <body>
 <main class="container">
