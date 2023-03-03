@@ -26,7 +26,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
             <th>Modèle</th>
             <th>Marque</th>
             <th>Année</th>
-            <th>Puissance</th>
+            <th>Puissance (en ch)</th>
         </thead>
         <tbody>
         <?php
@@ -38,7 +38,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                     <td><?= $voiture['marque'] ?></td>
                     <td><?= $voiture['annee'] ?></td>
                     <td><?= $voiture['puissance'] ?></td>
-                    <td><a href="information.php?id=<?= $produit['id'] ?>">Voir</a>  <a href="update.php?id=<?= $produit['id'] ?>">Modifier</a>  <a href="delete.php?id=<?= $produit['id'] ?>">Supprimer</a></td>
+                    <td><a href="information.php?id=<?= $voiture['id'] ?>">Voir</a>  <a href="update.php?id=<?= $voiture['id'] ?>">Modifier</a>  <a href="delete.php?id=<?= $produit['id'] ?>">Supprimer</a></td>
                 </tr>
         <?php
             }
