@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require_once 'fonction.ini.php';
 $connexion = connexion();
 
@@ -19,8 +20,31 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 
+
     <h1>Liste des voitures : </h1>
     <a class="btn-ajout-voiture" href="create.php">Ajouter une voiture</a>
+    <?php
+        if(isset($_SESSION['message'])){
+            ?>
+                <div>
+                    <strong> <?= $_SESSION['message']; ?> </strong>
+                </div>
+            <?php 
+            unset($_SESSION['message']);
+        }
+    ?>
+    <?php
+        if(isset($_SESSION['status'])){
+            ?>
+                <div>
+                    <strong> <?= $_SESSION['status']; ?> </strong>
+                </div>
+            <?php 
+            unset($_SESSION['status']);
+        }
+    ?>
+
+    
     <table>
         <thead>
             <th>Modèle</th>
@@ -41,7 +65,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                     <td>
                         <a class="btn-voir" href="information.php?id=<?= $voiture['id'] ?>">Voir</a>
                         <a class="btn-modifier" href="update.php?id=<?= $voiture['id'] ?>">Modifier</a>
-                        <a class="btn-supprimer" href="delete.php?id=<?= $voiture['id'] ?>">Supprimer</a>
+                        <a onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette voiture?')" class="btn-supprimer" href="delete.php?id=<?= $voiture['id'] ?>">Supprimer</a>
                     </td>
                 </tr>
         <?php

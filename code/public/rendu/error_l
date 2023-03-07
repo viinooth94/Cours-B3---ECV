@@ -2189,3 +2189,64 @@ Stack trace:
 [03-Mar-2023 15:43:53 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:14) in /var/www/html/public/rendu/delete.php on line 15
 [03-Mar-2023 15:45:44 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:14) in /var/www/html/public/rendu/delete.php on line 15
 [03-Mar-2023 15:54:29 Europe/Paris] PHP Parse error:  Unclosed '{' on line 5 in /var/www/html/public/rendu/delete.php on line 23
+[04-Mar-2023 11:10:48 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 46
+[04-Mar-2023 11:10:48 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 46
+[04-Mar-2023 11:11:14 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 11:11:14 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:47:36 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:47:36 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:47:38 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:47:38 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:47:45 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:47:45 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:50:12 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:50:12 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:50:30 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:50:30 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:50:32 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:50:32 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:50:37 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:50:37 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:50:48 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:50:48 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:52:42 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:52:42 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:53:25 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:53:25 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:55:26 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:55:26 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:56:23 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:56:23 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:56:25 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:56:25 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 47
+[04-Mar-2023 12:57:21 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 46
+[04-Mar-2023 12:57:21 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 46
+[04-Mar-2023 12:57:40 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 45
+[04-Mar-2023 12:57:40 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 45
+[04-Mar-2023 12:57:41 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 45
+[04-Mar-2023 12:57:41 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 45
+[04-Mar-2023 12:58:54 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 45
+[04-Mar-2023 12:58:54 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 45
+[04-Mar-2023 12:58:55 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 45
+[04-Mar-2023 12:58:55 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 45
+[04-Mar-2023 13:00:26 Europe/Paris] PHP Warning:  Undefined variable $produit in /var/www/html/public/rendu/information.php on line 65
+[04-Mar-2023 13:00:26 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/information.php on line 65
+[04-Mar-2023 13:15:07 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:14) in /var/www/html/public/rendu/delete.php on line 15
+[04-Mar-2023 13:33:06 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:3) in /var/www/html/public/rendu/delete.php on line 19
+[04-Mar-2023 13:40:37 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:5) in /var/www/html/public/rendu/delete.php on line 23
+[04-Mar-2023 13:40:56 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:3) in /var/www/html/public/rendu/delete.php on line 21
+[06-Mar-2023 09:53:40 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:3) in /var/www/html/public/rendu/delete.php on line 21
+[07-Mar-2023 09:33:29 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined function function_alert() in /var/www/html/public/rendu/delete.php:19
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 19
+[07-Mar-2023 09:34:40 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:19) in /var/www/html/public/rendu/delete.php on line 20
+[07-Mar-2023 09:43:58 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:19) in /var/www/html/public/rendu/delete.php on line 20
+[07-Mar-2023 10:04:50 Europe/Paris] PHP Warning:  Undefined array key "status" in /var/www/html/public/rendu/read.php on line 30
+[07-Mar-2023 10:28:16 Europe/Paris] PHP Warning:  Undefined variable $voiture in /var/www/html/public/rendu/update.php on line 30
+[07-Mar-2023 10:28:16 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/update.php:30) in /var/www/html/public/rendu/update.php on line 32
+[07-Mar-2023 10:28:16 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/update.php:30) in /var/www/html/public/rendu/update.php on line 38
+[07-Mar-2023 10:45:27 Europe/Paris] PHP Warning:  Undefined variable $modele in /var/www/html/public/rendu/delete.php on line 17
+[07-Mar-2023 10:45:27 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:17) in /var/www/html/public/rendu/delete.php on line 18
+[07-Mar-2023 10:46:04 Europe/Paris] PHP Warning:  Undefined array key "modele" in /var/www/html/public/rendu/delete.php on line 8
+[07-Mar-2023 10:46:04 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:8) in /var/www/html/public/rendu/delete.php on line 19

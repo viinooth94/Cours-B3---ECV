@@ -31,21 +31,37 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Détails de la voiture</title>
 </head>
 <body>
-<main class="container">
-        <div class="row">
-            <section class="col-12">
-                <h1>Information concernant la <?= $voiture['modele'] ?></h1>
-                <p>ID : <?= $voiture['id'] ?></p>
-                <p>Modèle : <?= $voiture['modele'] ?></p>
-                <p>Marque : <?= $voiture['marque'] ?></p>
-                <p>Année : <?= $voiture['annee'] ?></p>
-                <p>Puissance : <?= $voiture['puissance'] ?></p>
-                <p><a href="read.php">Retour</a> <a href="update.php?id=<?= $produit['id'] ?>">Modifier</a></p>
-            </section>
-        </div>
+<main>
+    <h1>Information concernant la <?= $voiture['modele'] ?></h1>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Modèle</th>
+            <th>Marque</th>
+            <th>Année</th>
+            <th>Puissance (en ch)</th>
+            <th>Édition</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td><?= $voiture['id'] ?></td>
+            <td><?= $voiture['modele'] ?></td>
+            <td><?= $voiture['marque'] ?></td>
+            <td><?= $voiture['annee'] ?></td>
+            <td><?= $voiture['puissance'] ?></td>
+            <td>
+                        <a class="btn-modifier" href="update.php?id=<?= $voiture['id'] ?>">Modifier</a>
+                        <a class="btn-supprimer" href="delete.php?id=<?= $voiture['id'] ?>">Supprimer</a>
+                    </td>
+                </tr>
+                 
+                </tbody>
+    </table>
+    <a class="btn-retour" href="read.php">Retour</a>
     </main>
 </body>
 </html>

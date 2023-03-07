@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require_once 'fonction.ini.php';
 $connexion = connexion();
 
@@ -26,6 +27,13 @@ if(isset($_POST)){
         $query->bindValue(':id', $id, PDO::PARAM_INT);
 
         $query->execute();
+        if($query){
+            $_SESSION['status'] = 'La '.$modele.' '.$marque.' à été modifiée avec succès !';
+            header('Location: update.php');
+        }else{
+            $_SESSION['status'] = 'URL invalide !';
+            header('Location: update.php');
+        }
 
         header('Location: read.php');
     }
@@ -41,11 +49,9 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
     $query->execute();
 
     $voiture = $query->fetch();
+    
 }
 ?>
-
-<h1> Update </h1>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,6 +63,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 </head>
 <body>
 <h1>Modifier les informations de la <?= $voiture['modele'] ?> </h1>
+
     <form method="post" id="update_form">
         <p>
             <label for="modele">Modèle</label>
@@ -77,7 +84,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
         <p>
             <button>Enregistrer</button>
         </p>
-        <p><a href="read.php">Retour</a></p>
+        <p><a class="btn-retour" href="read.php">Retour</a></p>
         <input type="hidden" name="id" value="<?= $voiture['id'] ?>">
     </form>
 </body>

@@ -53,14 +53,10 @@ if(isset($_POST)){
                     <label for="puissance">Puissance</label>
                     <input type="number" name="puissance" id="puissance">
                     <button>Enregistrer</button>
+                    <p><a class="btn-retour" href="read.php">Retour</a></p>
                 </form>
             </section>
                 </div>
 
 </body>
 </html>
-
-
-//TODO: Créer le formulaire HTML
-//TODO: Si formulaire soumi, alors faire la requete d'insertion
-//TODO: Bonus : Gérer les erreurs / Le typages des champs / Messages de succès / Message d'Echec / Redirection

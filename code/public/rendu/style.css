@@ -27,6 +27,7 @@ body{
     background: #006DAA;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
 h1{
     width: 41%;
     margin: auto;
@@ -102,6 +103,20 @@ button{
 }
 .btn-supprimer:hover, .btn-supprimer:active {
     background-color: red;
+    color: white;
+}
+
+.btn-retour:link, .btn-retour:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid #0353A4;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-retour:hover, .btn-retour:active {
+    background-color: #0353A4;
     color: white;
 }
 

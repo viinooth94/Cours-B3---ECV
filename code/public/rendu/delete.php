@@ -1,4 +1,5 @@
-<?php 
+<?php
+session_start();
 require_once 'fonction.ini.php';
 $connexion = connexion();
 
@@ -10,13 +11,16 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 
     $query->bindValue(':id', $id, PDO::PARAM_INT);
     $query->execute();
+    $voiture = $query->fetch();
 
-    $_SESSION['message'] = "Voiture supprimé";
-    header('Location: read.php');
+    if(!$voiture){
+        $_SESSION['message'] = 'La voiture '.$id.' à été supprimée avec succès !';
+        header('Location: read.php');
+    }else{
+        $_SESSION['message'] = 'URL invalide !';
+        header('Location: read.php');
+    }
 }
+
 ?>
 
-//todo: Recuperer l'id de l'url 
-//todo: Faire la requete SQL correspondante
-//todo: Bonus: mettre une confirmation de suppression avant d'exécuter la requete
-//TODO: Bonus : Gérer les erreurs / Le typages des champs / Messages de succès / Message d'Echec / Redirection
