@@ -2250,3 +2250,9 @@ Stack trace:
 [07-Mar-2023 10:45:27 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:17) in /var/www/html/public/rendu/delete.php on line 18
 [07-Mar-2023 10:46:04 Europe/Paris] PHP Warning:  Undefined array key "modele" in /var/www/html/public/rendu/delete.php on line 8
 [07-Mar-2023 10:46:04 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/delete.php:8) in /var/www/html/public/rendu/delete.php on line 19
+[07-Mar-2023 10:55:27 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'annee' at row 1 in /var/www/html/public/rendu/create.php:16
+Stack trace:
+#0 /var/www/html/public/rendu/create.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /var/www/html/public/rendu/create.php on line 16
+[07-Mar-2023 11:04:57 Europe/Paris] PHP Parse error:  Unclosed '{' on line 41 in /var/www/html/public/rendu/read.php on line 85

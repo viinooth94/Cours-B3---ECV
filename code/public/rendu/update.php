@@ -28,11 +28,9 @@ if(isset($_POST)){
 
         $query->execute();
         if($query){
-            $_SESSION['status'] = 'La '.$modele.' '.$marque.' à été modifiée avec succès !';
-            header('Location: update.php');
+            $_SESSION['status'] = 'La '.$modele.' '.$marque.' a été modifiée avec succès !';
         }else{
             $_SESSION['status'] = 'URL invalide !';
-            header('Location: update.php');
         }
 
         header('Location: read.php');
@@ -89,9 +87,3 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
     </form>
 </body>
 </html>
-
-//Todo : Récupérer l'id depuis l'url
-//TODO : Remplir le forumaire HTML avec les valeur récupérées depuis la requete correspondante
-//TODO: Penser a mettre un input hidden pour l'ID
-//TODO: mettre a jour le contenu avec une requete correspondante. 
-//TODO: Bonus : Gérer les erreurs / Le typages des champs / Messages de succès / Message d'Echec / Redirection

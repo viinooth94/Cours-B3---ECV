@@ -14,7 +14,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
     $voiture = $query->fetch();
 
     if(!$voiture){
-        $_SESSION['message'] = 'La voiture '.$id.' à été supprimée avec succès !';
+        $_SESSION['message'] = 'La voiture '.$id.' a été supprimée avec succès !';
         header('Location: read.php');
     }else{
         $_SESSION['message'] = 'URL invalide !';

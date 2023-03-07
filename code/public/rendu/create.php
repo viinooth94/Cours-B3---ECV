@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require_once 'fonction.ini.php';
 $connexion = connexion();
 
@@ -14,7 +15,7 @@ if(isset($_POST)){
             $query->bindValue(':annee', $_POST['annee'], PDO::PARAM_INT);
             $query->bindValue(':puissance', $_POST['puissance'], PDO::PARAM_INT);
             $query->execute();
-            $_SESSION['message'] = "Produit ajouté avec succès !";
+            $_SESSION['creation'] = 'La '.$_POST['modele'].' '.$_POST['marque'].' a été ajouté avec succès !';
             header('Location: read.php');
     }else{
         $_SESSION['erreur'] = "Le formulaire est incomplet";

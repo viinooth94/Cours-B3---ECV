@@ -19,7 +19,16 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     <title>Liste des voitures</title>
 </head>
 <body>
-
+    <?php
+     if(isset($_SESSION['connexion'])){
+            ?>
+                <div>
+                    <h2><strong> <?= $_SESSION['connexion']; ?> </strong></h2>
+                </div>
+            <?php 
+            unset($_SESSION['connexion']);
+        }
+    ?>
 
     <h1>Liste des voitures : </h1>
     <a class="btn-ajout-voiture" href="create.php">Ajouter une voiture</a>
@@ -27,20 +36,24 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         if(isset($_SESSION['message'])){
             ?>
                 <div>
-                    <strong> <?= $_SESSION['message']; ?> </strong>
+                    <h2><strong> <?= $_SESSION['message']; ?> </strong></h2>
                 </div>
             <?php 
             unset($_SESSION['message']);
-        }
-    ?>
-    <?php
-        if(isset($_SESSION['status'])){
+        }else if(isset($_SESSION['status'])){
             ?>
                 <div>
-                    <strong> <?= $_SESSION['status']; ?> </strong>
+                    <h2><strong> <?= $_SESSION['status']; ?> </strong></h2>
                 </div>
             <?php 
             unset($_SESSION['status']);
+        }else if(isset($_SESSION['creation'])){
+            ?>
+                <div>
+                    <h2><strong> <?= $_SESSION['creation']; ?> </strong></h2>
+                </div>
+            <?php 
+            unset($_SESSION['creation']);
         }
     ?>
 
